@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1518021416634.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1630490028",
+    "id" : "9D8CA00B",
+    "lastKnownWriteTime" : 1518022795,
+    "last_content_update" : 1518022795487,
+    "path" : "~/Documents/R code/remake_test/scripts/process_data.R",
+    "project_path" : "scripts/process_data.R",
+    "properties" : {
+        "cursorPosition" : "5,25",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

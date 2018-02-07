@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1518021339759.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "C8E95A44",
+    "lastKnownWriteTime" : 1518022749,
+    "last_content_update" : 1518022749056,
+    "path" : "~/Documents/R code/remake_test/remake.yml",
+    "project_path" : "remake.yml",
+    "properties" : {
+        "cursorPosition" : "22,14",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "yaml"
+}

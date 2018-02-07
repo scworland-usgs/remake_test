@@ -1,0 +1,23 @@
+
+packages:
+  - tidyr
+  - readr
+  
+sources:
+  - scripts/get_data.R
+  - scripts/process_data.R
+  - scripts/plot_data.R
+
+targets:
+  all:
+    depends: figures/plot.pdf
+
+  data/iris_data.csv:
+    command: download_data(target_name)
+
+  group_means:
+    command: process_data("data/iris_data.csv")
+
+  figures/plot.pdf:
+    command: plot_data(group_means)
+    plot: true

@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1518021413771.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2667127642",
+    "id" : "B129CCDE",
+    "lastKnownWriteTime" : 1518022711,
+    "last_content_update" : 1518022711314,
+    "path" : "~/Documents/R code/remake_test/scripts/get_data.R",
+    "project_path" : "scripts/get_data.R",
+    "properties" : {
+        "cursorPosition" : "2,37",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
