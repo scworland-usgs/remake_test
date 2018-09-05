@@ -31,8 +31,7 @@ sf_points_spatial <- sf_zip_spatial %>%
   group_by(zipcode) %>%
   st_sample(size=1000) %>%
   data.frame() %>%
-  st_as_sf() %>%
-  mutate(customer_id=1:nrow(.))
+  st_as_sf() 
 
 # generate interactive map
 mapview(sf_zip_spatial, zcol='pop') + 

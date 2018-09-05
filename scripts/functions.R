@@ -35,8 +35,7 @@ sample_points <- function(sf_zips_spatial, n=1000){
     group_by(zipcode) %>%
     st_sample(size=n) %>%
     data.frame() %>%
-    st_as_sf() %>%
-    mutate(customer_id=1:nrow(.))
+    st_as_sf() 
   
   return(sf_points_spatial)
   
