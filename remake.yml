@@ -1,23 +1,32 @@
-
 packages:
-  - tidyr
-  - readr
+  - tidyverse
+  - pdftools
+  - sf
+  - mapview
+  
+file_extensions:
+  - html
+  - shp 
   
 sources:
-  - scripts/get_data.R
-  - scripts/process_data.R
-  - scripts/plot_data.R
+  - scripts/functions.R
 
 targets:
-  all:
-    depends: figures/plot.pdf
 
-  data/iris_data.csv:
-    command: download_data(target_name)
+  sf_zip_codes:
+    command: get_sf_zips(file_name="data/zip_codes.pdf")
+    
+  ca_shapefile:
+    command: st_read('data/ca_zips/ZCTA2010.shp')
 
-  group_means:
-    command: process_data("data/iris_data.csv")
-
-  figures/plot.pdf:
-    command: plot_data(group_means)
-    plot: true
+  sf_zips_spatial:
+    command: subset_ca_zips(ca_shapefile,sf_zip_codes)
+  
+  data/sf_zips/sf_zips.shp:  
+    command: st_write(sf_zips_spatial,target_name,delete_layer=TRUE)
+    
+  sf_points_spatial:
+    command: sample_points(sf_zips_spatial, n=1000)
+    
+  sf_zipcode_map:
+    command: make_map(sf_zips_spatial, sf_points_spatial)
